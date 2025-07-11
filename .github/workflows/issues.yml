@@ -1,0 +1,8 @@
+name: Event details Workflow
+on: issues
+jobs:
+  event_details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display meta information - issues Context
+        run: echo "${{ toJSON(github) }}"
